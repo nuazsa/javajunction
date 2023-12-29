@@ -1,0 +1,378 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.banner img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+.container .row-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+    transition: 0.8s;
+}
+
+.container .row-navbar.sticky{
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(187, 185, 185, 0.768);
+}
+
+.container .row-navbar.sticky .navbar {
+    display: none;
+}
+
+.container .row-navbar .navbar {
+    margin: 0px 40px 0px 40px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.menu input {
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.container .row-navbar .navbar .menu a {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize; 
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.container .row-navbar .navbar .menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s;
+}
+.container .row-navbar .navbar .menu a:hover::after {
+    width: 100%;
+}
+.container .row-navbar .navbar .menu a.active::after {
+    width: 100%;
+}
+.scroll-nav {
+    margin: 10px 40px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scroll-nav .item-active{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.container .row-navbar.sticky .scroll-nav .item-active{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.scroll-nav .item:hover{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.container .row-navbar.sticky .scroll-nav .item:hover{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.scroll-nav a {
+    color: rgb(255, 230, 230);
+    background-color: rgba(187, 185, 185, 0.768);
+    padding: 5px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container .row-navbar.sticky .scroll-nav a {
+    color: rgb(40, 40, 40);
+    background-color: rgba(187, 185, 185, 0.434);
+    
+}
+
+span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(154, 154, 154);
+    border-radius: 3px;
+}
+.dropdown .row {
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown a{
+    color: black;
+    text-decoration: none;
+}
+.container ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.container ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+.dropdown {
+    display: none;
+}
+
+.row-navbar.sticky .dropdown {
+    display: block;
+    margin: 10px 40px;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown ul {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: green;
+}
+
+ul li:hover {
+    display: block;
+}
+
+.container .card {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 10px;
+    text-align: center;
+
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, 11rem);
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 1.5rem; */
+}
+.container .card .product {
+    margin: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px darkgrey;
+    background-color: #EDEDED;
+    cursor: pointer;
+}
+
+.container .card .product a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .card .product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container .card .product h3 {
+    text-transform: uppercase;
+}
+
+
+.container .card .product p {
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+}
+
+.out-of-stock {
+    color: red; /* Warna teks merah untuk menonjolkan pesan stok habis */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    margin-top: 5px; /* Jarak atas dari elemen di atasnya */
+}
+
+.circle {
+    background-color: #ff5722; /* Warna latar belakang lingkaran */
+    color: #fff; /* Warna teks di dalam lingkaran */
+    border-radius: 50%; /* Agar menjadi lingkaran */
+    width: 20px; /* Lebar lingkaran */
+    height: 20px; /* Tinggi lingkaran */
+    display: inline-block; /* Agar dapat diposisikan di dalam teks */
+    text-align: center; /* Posisi teks di tengah lingkaran */
+    font-size: 12px; /* Ukuran teks di dalam lingkaran */
+    line-height: 20px; /* Posisi vertikal teks di tengah lingkaran */
+    margin-left: 1px; /* Jarak antara teks dan lingkaran */
+}
+
+
+@media (max-width:968px){
+
+
+    .banner img{
+        width: 100%;
+        height: 25vh;
+        object-fit: cover;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .container .row-navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        color: white;
+        transition: 0.8s;
+    }
+
+    .container .row-navbar h1 {
+        font-size: 15px;
+    }
+
+    .container .row-navbar .navbar .menu a {
+        font-size: 10px;
+    }
+
+    .container .row-navbar .navbar .menu a::after {
+        bottom: 5px;
+    }
+
+    .menu input {
+        width: 50px;
+        font-size: 10px;
+        margin: 0 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .scroll-nav {
+        white-space: nowrap;
+        overflow-x: auto;
+    }   
+
+    .scroll-nav a {
+        display: inline-block;
+        color: rgb(255, 230, 230);
+        background-color: rgba(187, 185, 185, 0.768);
+        padding: 5px 30px;
+        margin: 2px;
+        font-size: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .menu-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+    }
+    
+    .menu-toggle {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 3;
+    }
+    
+    .menu-toggle span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
+    }
+    
+    .menu {
+        display: none;
+        background: linear-gradient(#3E2723, #795548);
+        position: absolute;
+        top: 50px; /* Ubah jarak dari atas */
+        right: 10px; /* Ubah jarak dari kanan */
+        z-index: 2;
+        border-radius: 5px;
+        width: 150px; /* Atur lebar menu */
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        text-align: right; /* Pusatkan teks ke kanan */
+    }
+    
+    .menu.active {
+        display: flex; /* Menggunakan flex untuk menyusun link secara vertikal */
+        flex-direction: column;
+        overflow: hidden;
+        transition: 1s;
+        padding: 15px 0;
+    }
+
+    .container .card {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        /* margin: 80px; */
+        text-align: center;
+    
+        /* display: grid; */
+        grid-template-columns: repeat(auto-fit, 9rem);
+        align-items: flex-start;
+        justify-content: center;
+        /* gap: 1.5rem; */
+    }
+
+    .container .card .product h3 {
+        font-size: 10px;
+    }
+    
+    
+    .container .card .product p {
+        font-size: 10px;
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+    }
+}    

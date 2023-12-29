@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #c48634;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    height: 70vh;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 800px;
+}
+
+
+
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+}
+
+input {
+    width: 90%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #c48634;
+}
+
+button:hover {
+    background: rgba(214, 86, 64, 1);
+}
+
+hr {
+    margin-bottom: 10px;
+    border-top: 2px solid #c48634;
+}
+
+form .error {
+    color: red;
+    font-style: italic;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.col img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.product-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-details li {
+    margin-bottom: 10px;
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Mengatur elemen agar sejajar vertikal */
+}
+
+.product-details label {
+    font-weight: bold;
+    min-width: 100px; /* Mengatur lebar minimum label untuk konsistensi */
+}
+
+.product-details input,
+.product-details select {
+    flex: 1; /* Memungkinkan elemen input/select untuk memenuhi ruang tersedia */
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.product-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product-details button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks */
+    border-radius: 5px; /* Sudut tombol */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Warna latar belakang saat tombol dihover */
+}

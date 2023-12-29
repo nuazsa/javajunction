@@ -1,0 +1,212 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.banner img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+.container .row-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+    transition: 0.8s;
+}
+
+.container .row-navbar.sticky{
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(187, 185, 185, 0.768);
+}
+
+.container .row-navbar.sticky .navbar {
+    display: none;
+}
+
+.container .row-navbar .navbar {
+    margin: 0px 40px 0px 40px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.col input {
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container .row-navbar .navbar .col a {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize; 
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.container .row-navbar .navbar .col a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s;
+}
+.container .row-navbar .navbar .col a:hover::after {
+    width: 100%;
+}
+.container .row-navbar .navbar .col a.active::after {
+    width: 100%;
+}
+.scroll-nav {
+    margin: 10px 40px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scroll-nav .item-active{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.container .row-navbar.sticky .scroll-nav .item-active{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.scroll-nav .item:hover{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.container .row-navbar.sticky .scroll-nav .item:hover{
+    background-color: rgba(4, 0, 255, 0.26);
+    color: rgb(34, 0, 255);
+}
+
+.scroll-nav a {
+    color: rgb(255, 230, 230);
+    background-color: rgba(187, 185, 185, 0.768);
+    padding: 5px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container .row-navbar.sticky .scroll-nav a {
+    color: rgb(40, 40, 40);
+    background-color: rgba(187, 185, 185, 0.434);
+    
+}
+
+span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(154, 154, 154);
+    border-radius: 3px;
+}
+.dropdown .row {
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown a{
+    color: black;
+    text-decoration: none;
+}
+.container ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.container ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+.dropdown {
+    display: none;
+}
+
+.row-navbar.sticky .dropdown {
+    display: block;
+    margin: 10px 40px;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown ul {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: green;
+}
+
+ul li:hover {
+    display: block;
+}
+
+.container .card {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 80px;
+    text-align: center;
+}
+.container .card .product {
+    margin: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px darkgrey;
+    background-color: rgba(216, 216, 216, 0.303);
+    cursor: pointer;
+}
+
+.container .card .product a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .card .product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container .card .product h3 {
+    text-transform: uppercase;
+}
+
+
+.container .card .product p {
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+}
