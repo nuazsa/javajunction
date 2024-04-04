@@ -2,9 +2,9 @@
 JavaJunction Home is an online food and drink ordering website.
 
 ## Demo
-client : https://javajunction.nuazsa.my.id/products/menus.php
+client : https://javajunction.nuazsa.my.id/products/menus.php (responsive)
 
-admin : https://javajunction.nuazsa.my.id/pageadmin/dashboard/index.php
+admin : https://javajunction.nuazsa.my.id/pageadmin/dashboard/index.php (not responsive)
 
 
 ## Features
@@ -20,7 +20,7 @@ admin : https://javajunction.nuazsa.my.id/pageadmin/dashboard/index.php
 | Update |✔️ order| ✔️ product| 
 | Delete |✔️ order| ✔️ product| 
 | Transaction |✔️| ✔️|
-| Responsive |✔️| ✔️|
+| Responsive |✔️| |
 
 ## Build With
 
