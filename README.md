@@ -1,6 +1,12 @@
 # JAVAJUNCTION HOME
 JavaJunction Home is an online food and drink ordering website.
 
+## Demo
+client : https://javajunction.nuazsa.my.id/products/menus.php
+
+admin : https://javajunction.nuazsa.my.id/pageadmin/dashboard/index.php
+
+
 ## Features
 | Feature | User | Admin |
 | ------- | ---- | ----- |
