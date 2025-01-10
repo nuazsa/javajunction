@@ -1,14 +1,20 @@
 # JAVAJUNCTION HOME
 JavaJunction Home is an online food and drink ordering website.
 
-## Demo
-client : https://javajunction.nuazsa.my.id/products/menus.php (responsive)
+## Screenshots
+### Admin
+| Login     | Dashboard      | Orders      |
+|--------------------|-------------------|-------------------|
+| ![Login](https://github.com/nuazsa/javajunction/blob/main/screenshot/login.png) | ![Dashboard](https://github.com/nuazsa/javajunction/blob/main/screenshot/dashboard.png) | ![Orders](https://github.com/nuazsa/javajunction/blob/main/screenshot/orders.png) |
 
-admin : https://javajunction.nuazsa.my.id/pageadmin/dashboard/index.php (not responsive)
-- username: admin
-- email: admin@gmail.com
-- password: admin
+### Client
+| Home      | Detail      | Cart      |
+|--------------------|-------------------|-------------------|
+| ![Home](https://github.com/nuazsa/javajunction/blob/main/screenshot/home.png) | ![Detail](https://github.com/nuazsa/javajunction/blob/main/screenshot/detail.png) | ![Cart](https://github.com/nuazsa/javajunction/blob/main/screenshot/cart.png) |
 
+| Checkout     | History      | Order      |
+|--------------------|-------------------|-------------------|
+| ![Checkout](https://github.com/nuazsa/javajunction/blob/main/screenshot/checkout.png) | ![History](https://github.com/nuazsa/javajunction/blob/main/screenshot/history.png) | ![Order](https://github.com/nuazsa/javajunction/blob/main/screenshot/order.png) |
 
 ## Features
 | Feature | User | Admin |
